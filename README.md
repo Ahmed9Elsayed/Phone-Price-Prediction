@@ -13,11 +13,10 @@ This project aims to classify phones based on several specs of the phone. The mo
 - [Dataset](#dataset)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Evaluation](#evaluation)
 - [Results](#results)
-- [Conclusion](#Conclusion)
+- [Conclusion](#conclusion)
 - [Future Work](#future-work)
-- [Contact Information](#Contact-Information)
+- [Contact Information](#contact-information)
 
 
 ## Project Description
@@ -98,14 +97,19 @@ You can install the dependencies using:
 2. **Data Preprocessing and EDA:**
 
     - The notebook includes code to preprocess all issues in the dataset.
+
     - also some EDA code about the dataset to understand it further.
 
 3. **Feature Engineering:**
 
     - used Mutual Information (MI) to capture any type of relationship between features and target
+
     - did Feature selection on the specs to subset only important predictors
+
     - created 2 new features to make it easier for the model to capture relations and patterns
+
 	    - resolution = px_height * px_width
+
 	    - mobile_size = sqrt( (sc_h ** 2) + (sc_w ** 2) )
 	
 
@@ -113,9 +117,13 @@ You can install the dependencies using:
 4. **Model Training:**
 
     Several machine learning models are used in this project, including:
-    - **Random Forest Classifier**
-	- **XGBoost Classifier**
-	- **LightGBM Classifier**
+    
+   - **Random Forest Classifier**
+
+   - **XGBoost Classifier**
+
+   - **LightGBM Classifier**
+
  The models are trained using the specs input features, and the price prediction is based on the likelihood derived from the specs.
 
   
